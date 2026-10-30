@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sunlush Investment · Seeds, fertilizer and sunflower oil from Kibaigwa</title>
+<meta name="description" content="Sunlush Investment Company Limited is a youth-led agribusiness in Kibaigwa, Dodoma, Tanzania. Quality seeds and fertilizer for farmers today; sunflower oil and maize flour processing next.">
+<meta property="og:title" content="Sunlush Investment · From seed to bottle, in Kibaigwa">
+<meta property="og:description" content="Quality seeds and fertilizer for Kibaigwa farmers, and a sunflower oil value chain we are building with partners.">
+<meta property="og:image" content="share.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#173A26">
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;600;700&display=swap">
+
+<script>
+/* ============================================================
+   CONTACT DETAILS: edit these before publishing.
+   Leave a value as "" to hide that button.
+   phone / whatsapp: international format, digits only, e.g. "255712345678"
+   ============================================================ */
+const CONTACT = {
+  phone:    "",
+  whatsapp: "",
+  email:    "",
+  instagram: "",   // full link, e.g. "https://instagram.com/sunlush"
+  linkedin:  ""    // full link to the company or CEO page
+};
+</script>
+
+<style>
+:root{
+  --green:#173A26; --green-2:#1F4A31; --green-3:#2F6B3E;
+  --sun:#F4D21F; --sun-deep:#E0B800;
+  --cream:#F6F7EE; --cream-2:#E9EDDF;
+  --ink:#173A26; --ink-soft:#4A5D4F; --on-green-soft:#C9D8CC;
+  --radius:20px; --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:'Public Sans','Segoe UI',system-ui,sans-serif;font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:'Bricolage Grotesque','Trebuchet MS',sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+h2{font-size:clamp(32px,5vw,52px);font-weight:800}
+h3{font-size:22px;font-weight:700;letter-spacing:-.01em}
+p{margin:0}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--green-3)}
+.on-green .eyebrow{color:var(--sun)}
+section{padding:88px 0}
+.lead{font-size:19px;color:var(--ink-soft);max-width:640px}
+.on-green{background:var(--green);color:var(--cream)}
+.on-green .lead{color:var(--on-green-soft)}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(23,58,38,.96);backdrop-filter:blur(8px);color:var(--cream)}
+.bar{display:flex;align-items:center;gap:16px;height:68px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700;letter-spacing:.02em}
+.brand img{width:42px;height:42px;border-radius:12px}
+.brand span small{display:block;font-weight:400;font-size:12px;color:var(--on-green-soft);letter-spacing:.04em}
+nav{margin-left:auto;display:flex;gap:22px;font-size:15px}
+nav a{text-decoration:none;color:var(--on-green-soft)}
+nav a:hover{color:var(--cream)}
+.lang{display:flex;border:1.5px solid var(--green-3);border-radius:999px;overflow:hidden;flex:none}
+.lang button{all:unset;cursor:pointer;padding:6px 12px;font-size:13px;font-weight:700;color:var(--on-green-soft)}
+.lang button[aria-pressed="true"]{background:var(--sun);color:var(--green)}
+@media (max-width:820px){nav{display:none}.lang{margin-left:auto}}
+
+/* buttons */
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;font-weight:700;font-size:16px;text-decoration:none;border:2px solid transparent;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-sun{background:var(--sun);color:var(--green)}
+.btn-line{border-color:currentColor}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* hero */
+.hero{background:var(--green);color:var(--cream);padding:64px 0 0;overflow:hidden;position:relative}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:end}
+.hero h1{font-size:clamp(44px,7.4vw,88px);font-weight:800;margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero .lead{margin-bottom:32px}
+.hero-copy{padding-bottom:72px}
+.hero-art{align-self:stretch;display:flex;align-items:flex-end;justify-content:center}
+.hero-art svg{width:100%;max-width:440px;height:auto}
+.facts{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:34px;font-size:14px;color:var(--on-green-soft)}
+.facts b{color:var(--cream)}
+@media (max-width:820px){.hero-grid{grid-template-columns:1fr}.hero-copy{padding-bottom:8px}.hero-art svg{max-width:300px}}
+
+/* cards */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:44px}
+@media (max-width:880px){.grid3{grid-template-columns:1fr}}
+.card{background:#fff;border-radius:var(--radius);padding:30px;display:flex;flex-direction:column;gap:14px;border:1px solid var(--cream-2)}
+.card .ico{width:56px;height:56px;border-radius:16px;background:var(--green);display:grid;place-items:center}
+.card .ico svg{width:30px;height:30px}
+.card p{color:var(--ink-soft)}
+.tag{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:var(--cream-2);color:var(--green-3)}
+.tag.next{background:var(--sun);color:var(--green)}
+
+/* chain */
+.chain{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;margin-top:44px;counter-reset:step}
+.step{border-radius:16px;padding:20px 18px;min-height:150px;display:flex;flex-direction:column;gap:8px;position:relative}
+.step.now{background:var(--green-2);border:2px solid var(--green-3)}
+.step.build{border:2px dashed var(--sun);background:transparent}
+.step .n{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:30px;color:var(--sun)}
+.step h3{font-size:18px}
+.step p{font-size:14px;color:var(--on-green-soft)}
+.legend{display:flex;gap:22px;flex-wrap:wrap;margin-top:20px;font-size:14px;color:var(--on-green-soft)}
+.legend span{display:inline-flex;align-items:center;gap:8px}
+.legend i{width:22px;height:14px;border-radius:4px;display:inline-block}
+@media (max-width:880px){.chain{grid-template-columns:1fr 1fr}.step{min-height:0}}
+@media (max-width:480px){.chain{grid-template-columns:1fr}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:44px}
+.stat{border-top:3px solid var(--green);padding-top:18px}
+.stat .big{font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(40px,5vw,56px);line-height:1;color:var(--green)}
+.stat p{color:var(--ink-soft);margin-top:10px}
+.src{font-size:13px;color:var(--ink-soft);margin-top:28px}
+@media (max-width:880px){.why{grid-template-columns:1fr}}
+
+/* brands */
+.brands{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.brands span{background:#fff;border:1px solid var(--cream-2);padding:10px 18px;border-radius:999px;font-weight:600}
+.licences{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:24px;color:var(--ink-soft);font-size:15px}
+.licences span::before{content:"✓ ";color:var(--green-3);font-weight:700}
+
+/* news */
+.news{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;margin-top:44px;align-items:start}
+.news .photos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.news .photos img{border-radius:14px;width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.news .photos img:first-child{grid-row:span 2;aspect-ratio:auto}
+.news .copy{display:flex;flex-direction:column;gap:18px}
+.news .copy p{color:var(--ink-soft)}
+.news .date{font-weight:700;color:var(--green-3)}
+@media (max-width:880px){.news{grid-template-columns:1fr}}
+
+/* partner */
+.partner-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:40px}
+.p-item{background:var(--green-2);border-radius:16px;padding:24px;display:flex;flex-direction:column;gap:8px}
+.p-item p{color:var(--on-green-soft);font-size:15px}
+@media (max-width:700px){.partner-list{grid-template-columns:1fr}}
+
+/* team */
+.team{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:40px}
+.person{background:#fff;border:1px solid var(--cream-2);border-radius:16px;padding:22px}
+.person .av{width:48px;height:48px;border-radius:24px;background:var(--sun);color:var(--green);display:grid;place-items:center;font-weight:800;font-family:'Bricolage Grotesque',sans-serif;margin-bottom:14px}
+.person b{display:block;font-size:17px}
+.person span{font-size:14px;color:var(--ink-soft)}
+@media (max-width:880px){.team{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.team{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px;align-items:stretch}
+.contact .box{background:#fff;border-radius:var(--radius);padding:30px;border:1px solid var(--cream-2);display:flex;flex-direction:column;gap:18px}
+.contact .btn-green{background:var(--green);color:var(--cream)}
+.map{border-radius:var(--radius);overflow:hidden;min-height:320px;border:1px solid var(--cream-2);background:var(--cream-2)}
+.map iframe{border:0;width:100%;height:100%;min-height:320px;display:block}
+@media (max-width:880px){.contact{grid-template-columns:1fr}}
+
+footer{background:var(--green);color:var(--on-green-soft);padding:40px 0;font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+footer b{color:var(--cream)}
+
+.wa-float{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:29px;background:#25D366;display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.wa-float svg{width:30px;height:30px}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">
+      <img src="logo.png" alt="">
+      <span>Sunlush Investment<small data-sw="Kibaigwa, Dodoma">Kibaigwa, Dodoma</small></span>
+    </a>
+    <nav aria-label="Main">
+      <a href="#what" data-sw="Tunachofanya">What we do</a>
+      <a href="#news" data-sw="Habari">News</a>
+      <a href="#partner" data-sw="Shirikiana nasi">Partner</a>
+      <a href="#contact" data-sw="Wasiliana">Contact</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+      <button type="button" data-lang="sw" aria-pressed="false">SW</button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero on-green">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow" data-sw="Biashara ya kilimo inayoongozwa na vijana · tangu 2021">Youth-led agribusiness · since 2021</p>
+      <h1 data-sw-html="Kutoka mbegu hadi <em>chupa</em>, hapa Kibaigwa.">From seed to <em>bottle</em>, in Kibaigwa.</h1>
+      <p class="lead" data-sw="Tunawapa wakulima mbegu bora, mbolea na ushauri kila msimu. Sasa tunajenga hatua inayofuata: kununua alizeti ya wakulima wetu na kukamua mafuta hapa hapa Kibaigwa.">We supply farmers with quality seed, fertilizer and advice every season. Now we are building the next step: buying our farmers' sunflower and pressing the oil right here in Kibaigwa.</p>
+      <div class="btns">
+        <a class="btn btn-sun" href="#contact" data-sw="Tembelea duka letu">Visit our shop</a>
+        <a class="btn btn-line" href="#partner" data-sw="Wekeza pamoja nasi">Invest with us</a>
+      </div>
+      <div class="facts">
+        <span><b>Kibaigwa–Kongwa</b>, Dodoma</span>
+        <span data-sw-html="Kampuni yenye kikomo tangu <b>Feb 2026</b>">Limited company since <b>Feb 2026</b></span>
+        <span data-sw-html="<b>Wasambazaji 7</b> wa pembejeo">Direct from <b>7 input suppliers</b></span>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 400 420" fill="none">
+        <!-- stem and leaves -->
+        <path d="M200 420 C200 330 198 280 200 210" stroke="#2F6B3E" stroke-width="12" stroke-linecap="round"/>
+        <path d="M200 330 C150 320 115 290 104 250 C150 252 186 282 200 330Z" fill="#2F6B3E"/>
+        <path d="M201 290 C248 282 282 252 292 214 C248 218 214 246 201 290Z" fill="#3E7F4C"/>
+        <!-- petals -->
+        <g transform="translate(200 150)">
+          <g fill="#F4D21F">
+            <ellipse rx="22" ry="70" transform="rotate(0) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(30) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(60) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(90) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(120) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(150) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(180) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(210) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(240) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(270) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(300) translate(0 -78)"/>
+            <ellipse rx="22" ry="70" transform="rotate(330) translate(0 -78)"/>
+          </g>
+          <g fill="#E0B800">
+            <ellipse rx="18" ry="58" transform="rotate(15) translate(0 -70)"/>
+            <ellipse rx="18" ry="58" transform="rotate(75) translate(0 -70)"/>
+            <ellipse rx="18" ry="58" transform="rotate(135) translate(0 -70)"/>
+            <ellipse rx="18" ry="58" transform="rotate(195) translate(0 -70)"/>
+            <ellipse rx="18" ry="58" transform="rotate(255) translate(0 -70)"/>
+            <ellipse rx="18" ry="58" transform="rotate(315) translate(0 -70)"/>
+          </g>
+          <circle r="64" fill="#5A3B1C"/>
+          <circle r="64" fill="url(#seeds)"/>
+        </g>
+        <defs>
+          <pattern id="seeds" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <circle cx="6" cy="6" r="2.6" fill="#7A532A"/>
+          </pattern>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE DO -->
+<section id="what">
+  <div class="wrap">
+    <p class="eyebrow" data-sw="Tunachofanya">What we do</p>
+    <h2 data-sw="Pembejeo bora leo. Usindikaji kesho.">Quality inputs today. Processing next.</h2>
+    <div class="grid3">
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#F4D21F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 21h12"/><path d="M12 21v-7"/><path d="M12 14c0-4 3-7 7-7 0 4-3 7-7 7z"/><path d="M12 12c0-3-2.5-5.5-6-5.5 0 3 2.5 5.5 6 5.5z"/></svg></div>
+        <span class="tag" data-sw="Inafanya kazi sasa">Running now</span>
+        <h3 data-sw="Mbegu na mbolea">Seeds and fertilizer</h3>
+        <p data-sw="Mbegu zilizothibitishwa za alizeti na mahindi, na mbolea kutoka kwa wasambazaji tunaowaamini, kwenye duka letu Kibaigwa.">Certified sunflower and maize seed, and fertilizer from suppliers we trust, sold from our shop in Kibaigwa.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#F4D21F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4h5v6h-5"/><path d="M16 7h3"/></svg></div>
+        <span class="tag" data-sw="Inafanya kazi sasa">Running now</span>
+        <h3 data-sw="Ushauri na Shamba Darasa">Advice and Shamba Darasa</h3>
+        <p data-sw="Mafunzo shambani kuhusu kupanda, mbolea na mavuno, pamoja na kikundi cha kuweka akiba cha M-Koba kwa wakulima.">Field training on planting, fertilizer and harvest, plus an M-Koba savings group so farmers can plan for the next season.</p>
+      </article>
+      <article class="card">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="#F4D21F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c3 4 5 6.5 5 9.5a5 5 0 0 1-10 0C7 9.5 9 7 12 3z"/></svg></div>
+        <span class="tag next" data-sw="Tunajenga">Building</span>
+        <h3 data-sw="Mafuta ya alizeti na unga wa mahindi">Sunflower oil and maize flour</h3>
+        <p data-sw="Kununua mavuno ya wakulima tunaowahudumia, kukamua mafuta na kusaga unga, ili thamani ibaki Kibaigwa.">Buying the harvest from the farmers we serve, pressing oil and milling flour, so the value stays in Kibaigwa.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE CHAIN -->
+<section class="on-green">
+  <div class="wrap">
+    <p class="eyebrow" data-sw="Mnyororo wa thamani">Our value chain</p>
+    <h2 data-sw="Kampuni moja, kutoka mbegu hadi chupa">One company, from seed to bottle</h2>
+    <p class="lead" style="margin-top:18px" data-sw="Mkulima anayenunua mbegu kwetu ndiye atakayetuuzia alizeti. Hilo ndilo linaloufanya mfumo wetu kuwa imara.">The farmer who buys seed from us is the farmer who will sell us sunflower. That link is what makes the model strong.</p>
+    <div class="chain">
+      <div class="step now"><span class="n">1</span><h3 data-sw="Mbegu na mbolea">Seed and fertilizer</h3><p data-sw="Kabla ya kupanda">Before planting</p></div>
+      <div class="step now"><span class="n">2</span><h3 data-sw="Ushauri shambani">Field advice</h3><p data-sw="Msimu mzima">Through the season</p></div>
+      <div class="step build"><span class="n">3</span><h3 data-sw="Kununua mavuno">Buy the harvest</h3><p data-sw="Bei ya haki kwa wakulima wetu">A fair price for our farmers</p></div>
+      <div class="step build"><span class="n">4</span><h3 data-sw="Kukamua na kufunga">Press and bottle</h3><p data-sw="Kiwandani Kibaigwa">At our Kibaigwa factory</p></div>
+      <div class="step build"><span class="n">5</span><h3 data-sw="Kuuza mafuta na mashudu">Sell oil and cake</h3><p data-sw="Mashudu kwa chakula cha mifugo">Seed cake goes to animal feed</p></div>
+    </div>
+    <div class="legend">
+      <span><i style="background:var(--green-2);border:2px solid var(--green-3)"></i><span data-sw="Inafanya kazi leo">Running today</span></span>
+      <span><i style="border:2px dashed var(--sun)"></i><span data-sw="Tunachojenga na wawekezaji">What we are building with investors</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY KIBAIGWA -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow" data-sw="Kwa nini Kibaigwa">Why Kibaigwa</p>
+    <h2 data-sw="Katikati ya ukanda wa alizeti">In the heart of the sunflower belt</h2>
+    <div class="why">
+      <div class="stat"><div class="big">312,000 t</div><p data-sw="Mafuta ya alizeti yaliyozalishwa Tanzania mwaka 2024, zaidi ya nchi nyingine yoyote Afrika.">Sunflower oil produced in Tanzania in 2024, more than any other African country.</p></div>
+      <div class="stat"><div class="big">42%</div><p data-sw="Ya alizeti ya nchi hutoka Dodoma, Singida na mikoa jirani.">Of the country's sunflower comes from Dodoma, Singida and neighbouring regions.</p></div>
+      <div class="stat"><div class="big" data-sw="Barabara kuu">On the highway</div><p data-sw="Kibaigwa iko kwenye barabara ya Morogoro–Dodoma, mji wa biashara ya nafaka kati ya mashamba na Dar es Salaam.">Kibaigwa sits on the Morogoro–Dodoma road, a grain trading town between the farms and Dar es Salaam.</p></div>
+    </div>
+    <p class="src" data-sw="Vyanzo: IndexBox, soko la mafuta ya alizeti Afrika 2024; JMT (2018) kama ilivyonukuliwa katika J. Economic and Social Development, Jan 2025.">Sources: IndexBox, Africa sunflower oil market 2024; URT (2018) cited in J. Economic and Social Development, Jan 2025.</p>
+
+    <h3 style="margin-top:64px" data-sw="Bidhaa tunazouza">Brands we stock</h3>
+    <div class="brands">
+      <span>Seedland</span><span>ASA</span><span>Meru Agro</span><span>SeedCo</span><span>Minjingu</span><span>TFC</span><span>Novfeed</span>
+    </div>
+    <div class="licences">
+      <span data-sw="Leseni ya TOSCI">TOSCI licence</span>
+      <span data-sw="Mkataba wa usambazaji na TFC (2026)">TFC supply contract (2026)</span>
+      <span data-sw="Kikundi cha akiba cha M-Koba">M-Koba savings group</span>
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news" style="background:#fff">
+  <div class="wrap">
+    <p class="eyebrow" data-sw="Habari">News</p>
+    <h2 data-sw="Sunlush katika Jukwaa la Uwekezaji Tanzania 2026">Sunlush at the Tanzania Investment Forum 2026</h2>
+    <div class="news">
+      <div class="photos">
+        <img src="forum-backdrop.jpg" alt="Sarafina Luvinga, CEO of Sunlush, at the Tanzania Investment Forum 2026 in London" loading="lazy">
+        <img src="forum-team.jpg" alt="Sarafina Luvinga with fellow participants at the forum" loading="lazy">
+        <img src="forum-group.jpg" alt="Sarafina Luvinga with two forum participants" loading="lazy">
+      </div>
+      <div class="copy">
+        <p class="date" data-sw="London · 8 Oktoba 2026">London · 8 October 2026</p>
+        <p data-sw="Mkurugenzi wetu Mtendaji, Sarafina Luvinga, alishiriki katika Jukwaa la Uwekezaji Tanzania 2026 jijini London, lililoandaliwa na Invest Africa.">Our CEO, Sarafina Luvinga, took part in the Tanzania Investment Forum 2026 in London, organised by Invest Africa.</p>
+        <p data-sw="Ujumbe wetu: uwekezaji mkubwa hustawi pale ambapo biashara ndogo na za kati (SMEs) ni imara. SMEs huunganisha wawekezaji na wakulima, wasambazaji na masoko ya ndani, na benki zina nafasi muhimu zinaposhirikiana na SMEs.">Our message: large investments take root where small and medium businesses are strong. SMEs connect investors to farmers, suppliers and local markets, and banks play a vital role when they partner with SMEs.</p>
+        <p data-sw="Asante kwa Invest Africa, NMB, NBC, CRDB na washirika wote kwa kuikutanisha jamii ya uwekezaji ya Tanzania.">Thank you to Invest Africa, NMB, NBC, CRDB and all partners for bringing Tanzania's investment community together.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER -->
+<section id="partner" class="on-green">
+  <div class="wrap">
+    <p class="eyebrow" data-sw="Shirikiana nasi">Partner with us</p>
+    <h2 data-sw="Wekeza katika kilimo biashara cha Tanzania pamoja nasi">Invest in Tanzania's agribusiness with us</h2>
+    <p class="lead" style="margin-top:18px" data-sw="Tuko tayari kushirikiana na yeyote anayetaka kuwekeza katika mnyororo wa thamani wa kilimo Tanzania.">We are ready to partner with anyone looking to invest in Tanzania's agribusiness value chain.</p>
+    <div class="partner-list">
+      <div class="p-item"><h3 data-sw="Wawekezaji">Investors</h3><p data-sw="Usindikaji wa mafuta ya alizeti na unga wa mahindi, kwa fedha zinazotolewa kwa awamu kulingana na matokeo yanayopimwa.">Sunflower oil and maize flour processing, with funds released in stages against measured results.</p></div>
+      <div class="p-item"><h3 data-sw="Benki na taasisi za fedha">Banks and lenders</h3><p data-sw="Mikopo ya mtaji wa kazi kwa msimu wa pembejeo na ununuzi wa mavuno, ikiungwa mkono na kumbukumbu zetu za kila mwezi.">Working capital for the input season and harvest buying, backed by our monthly records.</p></div>
+      <div class="p-item"><h3 data-sw="Wanunuzi">Buyers</h3><p data-sw="Mafuta ya alizeti, mashudu kwa chakula cha mifugo, na unga wa mahindi.">Sunflower oil, seed cake for animal feed, and maize flour.</p></div>
+      <div class="p-item"><h3 data-sw="Wasambazaji wa pembejeo">Input suppliers</h3><p data-sw="Kampuni za mbegu na mbolea zinazotafuta mtandao wa kuaminika kufikia wakulima wadogo wa Kongwa.">Seed and fertilizer companies looking for a trusted route to Kongwa's smallholder farmers.</p></div>
+    </div>
+    <div class="btns" style="margin-top:36px">
+      <a class="btn btn-sun js-email" href="#contact" data-sw="Zungumza na Mkurugenzi">Talk to our CEO</a>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section>
+  <div class="wrap">
+    <p class="eyebrow" data-sw="Timu yetu">Our team</p>
+    <h2 data-sw="Timu ya vijana yenye ujuzi wa shamba, fedha na uhandisi">A young team with field, finance and engineering skills</h2>
+    <div class="team">
+      <div class="person"><div class="av">SL</div><b>Sarafina Luvinga</b><span data-sw="Mkurugenzi Mtendaji">Chief Executive Officer</span></div>
+      <div class="person"><div class="av">RS</div><b>Raphael Salu</b><span data-sw="Mtaalamu wa kilimo · BSc Kilimo">Agronomist · BSc Agriculture</span></div>
+      <div class="person"><div class="av">FF</div><b>Filimina Festo</b><span data-sw="Mauzo na masoko">Sales and marketing</span></div>
+      <div class="person"><div class="av">JN</div><b>Joseph Nduguru</b><span data-sw="Mhasibu · CPA">Accountant · CPA</span></div>
+      <div class="person"><div class="av">RM</div><b>Raynard Magehema</b><span data-sw="Bodi · Mhandisi">Board · P.Eng (T), MSc</span></div>
+      <div class="person"><div class="av">CL</div><b>Cletus Luvinga</b><span data-sw="Bodi">Board</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="background:#fff">
+  <div class="wrap">
+    <p class="eyebrow" data-sw="Wasiliana">Contact</p>
+    <h2 data-sw="Tutembelee au tuandikie">Visit us or get in touch</h2>
+    <div class="contact">
+      <div class="box">
+        <div>
+          <h3 data-sw="Duka la Sunlush">Sunlush shop</h3>
+          <p style="color:var(--ink-soft);margin-top:8px">Kibaigwa, Kongwa District<br>Dodoma, Tanzania</p>
+        </div>
+        <div class="btns" id="contact-btns">
+          <a class="btn btn-sun" id="btn-wa" hidden target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+            <span data-sw="WhatsApp">WhatsApp us</span></a>
+          <a class="btn btn-green" id="btn-call" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+            <span id="call-label">Call</span></a>
+          <a class="btn btn-line" id="btn-email" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <span id="email-label">Email</span></a>
+        </div>
+        <p id="no-contact" style="color:var(--ink-soft)" data-sw="Karibu dukani kwetu Kibaigwa wakati wa saa za kazi.">Visit our shop in Kibaigwa during business hours.</p>
+        <p style="font-size:14px;color:var(--ink-soft);margin-top:auto" id="social"></p>
+      </div>
+      <div class="map">
+        <iframe title="Map of Kibaigwa, Dodoma" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Kibaigwa,+Kongwa,+Dodoma,+Tanzania&z=13&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>Sunlush Investment Company Limited</b><br><span data-sw="Imebarikiwa na asili. Kila tone, kila punje ni baraka.">Blessed by nature. Every drop, every grain is a blessing.</span></div>
+    <div>Kibaigwa, Dodoma, Tanzania · Business No. 200423763<br>© <span id="yr">2026</span> Sunlush Investment</div>
+  </div>
+</footer>
+
+<a class="wa-float" id="wa-float" hidden target="_blank" rel="noopener" aria-label="WhatsApp Sunlush">
+  <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1l.9-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.3z"/></svg>
+</a>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const digits = v => String(v||"").replace(/\D/g,"");
+
+  // ---- contact buttons from CONTACT config ----
+  const wa = digits(CONTACT.whatsapp), ph = digits(CONTACT.phone), em = (CONTACT.email||"").trim();
+  const waMsg = encodeURIComponent("Habari Sunlush, ");
+  if (wa){ ["#btn-wa","#wa-float"].forEach(s=>{const a=$(s);a.href="https://wa.me/"+wa+"?text="+waMsg;a.hidden=false;}); }
+  if (ph){ const a=$("#btn-call"); a.href="tel:+"+ph; a.hidden=false; $("#call-label").textContent="+"+ph; }
+  if (em){ const a=$("#btn-email"); a.href="mailto:"+em; a.hidden=false; $("#email-label").textContent=em;
+           const p=$(".js-email"); p.href="mailto:"+em+"?subject="+encodeURIComponent("Partnership with Sunlush"); }
+  if (wa||ph||em) $("#no-contact").hidden = true;
+  const soc=[];
+  if (CONTACT.instagram) soc.push('<a href="'+CONTACT.instagram+'" target="_blank" rel="noopener">Instagram</a>');
+  if (CONTACT.linkedin)  soc.push('<a href="'+CONTACT.linkedin+'" target="_blank" rel="noopener">LinkedIn</a>');
+  $("#social").innerHTML = soc.join(" · ");
+  $("#yr").textContent = new Date().getFullYear();
+
+  // ---- English / Kiswahili switch ----
+  const nodes = [...document.querySelectorAll("[data-sw],[data-sw-html]")];
+  nodes.forEach(n => n._en = n.innerHTML);
+  function setLang(l){
+    nodes.forEach(n => {
+      if (l==="sw") n.innerHTML = n.dataset.swHtml || escapeHtml(n.dataset.sw);
+      else n.innerHTML = n._en;
+    });
+    document.documentElement.lang = l;
+    document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang===l));
+    try{ localStorage.setItem("sunlush-lang", l); }catch(e){}
+  }
+  function escapeHtml(s){ const d=document.createElement("div"); d.textContent=s||""; return d.innerHTML; }
+  document.querySelectorAll(".lang button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+  let saved="en"; try{ saved = localStorage.getItem("sunlush-lang") || "en"; }catch(e){}
+  if (saved==="sw") setLang("sw");
+})();
+</script>
+</body>
+</html>
